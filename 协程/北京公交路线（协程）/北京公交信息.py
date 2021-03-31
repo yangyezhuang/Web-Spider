@@ -39,7 +39,7 @@ async def get_info(url,semaphore):
 def save_csv(name, station, line):
     if not os.path.exists(path):
         os.mkdir(path)
-    with open(path + '北京全部.csv', 'a', encoding='utf-8', newline='') as f:
+    with open(path + '全部.csv', 'a', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
         writer.writerow([name, station, line])
 
